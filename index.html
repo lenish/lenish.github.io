@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body {
             font-family: 'Open Sans', sans-serif;
@@ -33,16 +34,30 @@
         }
         h1 { margin: 10px 0; color: #333; }
         p { color: #666; line-height: 1.6; }
-        .links a {
-            text-decoration: none;
-            color: white;
-            background-color: #007BFF;
-            padding: 10px 20px;
-            border-radius: 5px;
-            margin: 5px;
-            display: inline-block;
+        /* Social Media Icons */
+        .links {
+            margin-top: 20px;
         }
-        .links a:hover { background-color: #0056b3; }
+
+        .links a {
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 45px;
+            height: 45px;
+            background-color: #333; /* Dark grey buttons */
+            color: white;
+            border-radius: 50%; /* Makes them perfectly round */
+            text-decoration: none;
+            margin: 0 8px; /* Space between buttons */
+            font-size: 20px;
+            transition: all 0.3s ease; /* Smooth animation */
+        }
+
+        .links a:hover {
+            background-color: #007BFF; /* Turns blue when you hover */
+            transform: translateY(-3px); /* Floats up slightly */
+        }
         /* Container for the whole page content */
         .container {
             max-width: 800px;
@@ -91,10 +106,21 @@
             <img src="profile.jpg" alt="Ryan Kim" class="photo">
             <h1>Ryan Kim</h1>
             <p>Hello! I am a Developer based in Singapore. I love coding, hiking, and coffee.</p>
-            
-            <div class="links">
-                <a href="https://linkedin.com/in/yourlink">LinkedIn</a>
-                <a href="mailto:your@email.com">Email Me</a>
+           <div class="links">
+                <!-- LinkedIn -->
+                <a href="https://www.linkedin.com/in/YOUR-LINK-HERE" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                
+                <!-- GitHub -->
+                <a href="https://github.com/YOUR-USERNAME" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:your@email.com" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
             </div>
         </div>
 
